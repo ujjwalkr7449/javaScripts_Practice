@@ -14,3 +14,20 @@ let n = 5;
 for (let i = 1; i <= 10; i++) {
     console.log(`${n} x ${i} = ${n * i}`);
 }
+
+/* 4. Sum of first 10 numbers */
+let sum = 0;
+
+for (let i = 1; i <= 10; i++) {
+    sum += i;
+}
+console.log("Sum:", sum);
+
+/* 5. Factorial */
+let num = 5;
+let factorial = 1;
+
+for (let i = 1; i <= num; i++) {
+    factorial *= i;
+}
+console.log("Factorial:", factorial); // 120
