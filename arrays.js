@@ -24,3 +24,24 @@ for (let num of values) {
     }
 }
 console.log("Largest:", largest);
+
+
+/* 4. Remove duplicates */
+let data = [1, 2, 2, 3, 3, 4];
+let unique = [...new Set(data)];
+
+console.log(unique);
+
+/* 5. Double every number */
+let result = [1, 2, 3, 4].map(num => num * 2);
+console.log(result);
+
+/* 6. Filter numbers greater than 10 */
+let filtered = [5, 15, 8, 20, 12].filter(num => num > 10);
+console.log(filtered);
+
+/* 7. Find second-largest distinct number */
+let nums = [10, 5, 20, 8, 20];
+let uniqueNums = [...new Set(nums)].sort((a, b) => b - a);
+
+console.log("Second largest:", uniqueNums[1]);
